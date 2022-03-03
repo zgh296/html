@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <title>校园景色</title>
+        
+        <link rel="icon" type="image/x-icon" href="../其他/1.ico">
+
+        <style>
+            body {
+                background-image:url("../主页面/all.jpg");
+                background-attachment: fixed;
+            }
+
+            @font-face {
+                font-family: 方正粗黑宋简体, cursive;
+                src: url("C:/Program Files/WindowsApps/903DB504.56054E940A214_11.6.2035.0_x86__a99ra4d2cbcxa/方正粗黑宋简体.ttf");
+            }
+            h1 {
+                font-family: 方正粗黑宋简体, cursive;
+                color:rgb(18, 139, 155);
+                text-align: center;
+                font-size: 30px;
+                letter-spacing: 30px;
+            }
+
+            #images {
+                width: 1200px;
+                height: 700px;
+                overflow: hidden;
+                position: relative;
+                margin: 20px auto;
+            }
+            #images img {
+                width: 1200px;
+                height: 700px;
+                position: absolute;
+                top: 0;
+                left: -400px;
+                z-index: 1;
+                opacity: 1;
+                transition: all linear 500ms;
+                -o-transition: all linear 500ms;
+                -moz-transition: all linear 500ms;
+                -webkit-transition: all linear 500ms;
+            }
+            #images img:target {
+                left: 0;
+                z-index: 9;
+                opacity: 1;
+            }
+            #images img:first-child {
+                left: 0;
+            }
+
+            #slider {
+                width: 1100px;
+                height: 30px;
+                margin: 20px auto 20px 210px;
+            }
+            #slider a {
+                text-align: center;
+                text-decoration: none;
+                background: #84ac16;
+                border: 1px solid #68ff42;
+                padding: 4px 6px;
+                color: #222;
+                margin: 20px 10px;
+            }
+            #slider a:hover {
+                background: #C6E4F2;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>校园景色</h1>
+        <div id="images">
+            <img id="image1" src="../校园景色/1.JPG" />
+            <img id="image2" src="../校园景色/2.jpg" />
+            <img id="image3" src="../校园景色/3.jpg" />
+            <img id="image4" src="../校园景色/4.jpg" />
+            <img id="image5" src="../校园景色/5.jpg" />
+            <img id="image6" src="../校园景色/6.jpg" />
+            <img id="image7" src="../校园景色/7.jpg" />
+            <img id="image8" src="../校园景色/8.jpg" />
+            <img id="image9" src="../校园景色/9.jpg" />
+            <img id="image10" src="../校园景色/10.jpg" />
+            <img id="image11" src="../校园景色/11.jpg" />
+            <img id="image12" src="../校园景色/12.jpg" />
+            <img id="image13" src="../校园景色/13.jpg" />
+            <img id="image14" src="../校园景色/14.jpg" />
+            <img id="image15" src="../校园景色/15.jpg" />
+            <img id="image16" src="../校园景色/16.jpg" />
+            <img id="image17" src="../校园景色/17.jpg" />
+            <img id="image18" src="../校园景色/18.jpg" />
+            <img id="image19" src="../校园景色/19.jpg" />
+            <img id="image20" src="../校园景色/20.jpg" />
+        </div>
+        <div id="slider">
+            <a href="#image1">1</a>
+            <a href="#image2">2</a>
+            <a href="#image3">3</a>
+            <a href="#image4">4</a>
+            <a href="#image5">5</a>
+            <a href="#image6">6</a>
+            <a href="#image7">7</a>
+            <a href="#image8">8</a>
+            <a href="#image9">9</a>
+            <a href="#image10">10</a>
+            <a href="#image11">11</a>
+            <a href="#image12">12</a>
+            <a href="#image13">13</a>
+            <a href="#image14">14</a>
+            <a href="#image15">15</a>
+            <a href="#image16">16</a>
+            <a href="#image17">17</a>
+            <a href="#image18">18</a>
+            <a href="#image19">19</a>
+            <a href="#image20">20</a>
+        </div>
+
+    </body>
+
+</html>

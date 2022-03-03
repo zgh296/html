@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <title>校园回忆录</title>
+        
+        <link rel="icon" type="image/x-icon" href="../其他/1.ico">
+        
+        <style>
+            @font-face {
+                font-family: "字魂71号-御守锦书";
+                src: url("../其他/字魂71号-御守锦书.ttf");
+            }
+            body {
+                background-color: bisque;
+            }
+            h1 {
+                background-clip: border-box;
+                font-family: "字魂71号-御守锦书";            
+                background: linear-gradient(to right, rgb(186, 255, 57), rgb(236, 79, 171));
+                -webkit-background-clip: text;
+                color: transparent;
+                font-size: 60px;
+                letter-spacing:20px;
+                font-style:italic; 
+                text-align:center;
+            }
+            video {
+                margin-left:80px;
+                border-radius:5em;
+                border-style:solid;
+                border-color:rgb(255, 151, 241);
+            }
+        </style>
+
+    </head>
+
+    <body>
+        
+        <h1>校园回忆录</h1>
+
+        <video id="videl" src="../校园回忆录/校园回忆录.mp4" width="90%" height="90%" controls autoplay loop="loop">404!</video>
+        
+        <p>播放速率：
+            <select id="selRate">
+                <option value="0.5">0.5</option>
+                <option value="1.0" selected>1.0</option>
+                <option value="1.5">1.5</option>
+                <option value="2.0">2.0</option>
+            </select>
+        </p>
+        
+        <button id="button">播放/暂停</button>
+        <button onclick="makeBig()">放大</button>
+        <button onclick="makeSmall()">缩小</button>
+        <button onclick="makeNormal()">正常</button>
+        
+        <script>
+            var rate=document.getElementById('selRate');
+            var button=document.getElementById('button');
+            var videl=document.getElementById('videl');
+            
+            button.onclick=function() {
+                if(videl.paused){
+                    videl.play();
+                }
+                else{
+                    videl.pause();
+                }
+            }
+            
+            function makeBig() {
+                videl.width=1400;
+            }
+            function makeSmall() {
+                videl.width=500;
+            }
+            function makeNormal() {
+                videl.width=1340;
+            }
+            
+            rate.addEventListener('change',function(){videl.playbackRate=this.value;});
+            
+        </script>
+        
+    </body>
+    
+</html>

@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <title>网页设计</title>
+        
+        <link rel="icon" type="image/x-icon" href="../其他/1.ico">
+        
+        <style>
+            @font-face {
+                font-family: "字魂71号-御守锦书";
+                src: url("../其他/字魂71号-御守锦书.ttf");
+            }
+            p.a {
+                font-family: "字魂71号-御守锦书", cursive;
+            }
+        </style>
+        
+        <style>
+           
+            div.top {
+                width:100%;
+                height:100px;
+                position:relative;
+                margin-top: -10px;
+                background-image:url("../主页面/top.jpg");        
+            }
+            p.a {
+                padding:30px;
+                position:absolute;
+                margin-top: -10px;
+                margin-left: 22%;
+                color:rgba(83,120,250,1.00);
+                font-size:4vw;
+                white-space:nowrap; 
+            }
+            span.one {
+                color:rgb(83, 250, 83);
+            }
+            span.two {
+                color:rgb(203, 83, 250);
+            }
+            span.three {
+                color:rgb(241, 239, 122);
+            }
+
+            div.all {
+                width:100%;
+                height:1200px;
+                background-color:aliceblue;
+            }
+            
+            div.left {
+                float:left;
+                width:20%;
+                height:600px;
+                background-color:aliceblue;
+            }
+            div.left1 {
+                margin:10px;
+                width:100%;
+                height:580px;
+                background-image:url("../主页面/left.jpg");
+                vertical-align:middle;
+                margin-top: -24px;
+            }
+            
+            div.main {
+                float:left;
+                width:59%;
+                height:600px;
+                background-color:aliceblue;
+            }
+            div.main1 {
+                margin:10px;
+                width:100%;
+                height:580px;
+                background-image:url("../主页面/main.jpg");
+                margin-top: -24px;
+            }
+            
+            div.right {
+                float:left;
+                width:20%;
+                height:600px;
+                background-color:aliceblue;
+            }
+            div.right1 {
+                margin:10px;
+                width:100%;
+                height:580px;
+                background-image:url("../主页面/right.jpg");
+                margin-top: -24px;
+            }
+            
+            div.bottomleft  {
+                float:left;
+                width:50%;
+                height:500px;
+                background-color:aliceblue;
+            }
+         
+            div.bottomright  {
+                float:left;
+                width:50%;
+                height:500px;
+                background-color:aliceblue;
+            }
+            
+        </style>
+        
+        <style>
+            p.left2 {
+                color:rgba(186,239,71,1.00);
+                text-align: center;
+                line-height: 580px;
+                letter-spacing:3px; 
+                font-size: 40px;
+                font-family: "字魂71号-御守锦书", cursive;
+            }
+            p.left2:hover {
+                background-clip: border-box;
+                background: linear-gradient(to right, rgb(186, 255, 57), rgb(236, 79, 171));
+                -webkit-background-clip: text;
+                color: transparent;
+                text-align: center;
+                line-height: 580px;
+                letter-spacing:3px; 
+                font-size: 40px;
+                font-family: "字魂71号-御守锦书", cursive;
+                font-style:italic;
+                filter: drop-shadow(10px 10px 100px gray);
+            }
+            
+            p.right2 {
+                color:rgba(186,239,71,1.00);
+                text-align: center;
+                line-height: 580px;
+                letter-spacing:3px; 
+                font-size: 40px;
+                font-family: "字魂71号-御守锦书", cursive;
+            }
+            p.right2:hover {
+                background-clip: border-box;
+                background: linear-gradient(to right, rgb(186, 255, 57), rgb(236, 79, 171));
+                -webkit-background-clip: text;
+                color: transparent;
+                text-align: center;
+                line-height: 580px;
+                letter-spacing:3px; 
+                font-size: 40px;
+                font-family: "字魂71号-御守锦书", cursive;
+                font-style:italic;
+                filter: drop-shadow(10px 10px 100px gray);
+            }
+            
+            p.main2 {
+                color:rgba(186,239,71,1.00);
+                text-align: center;
+                line-height: 580px;
+                letter-spacing:3px; 
+                font-size: 40px;
+                font-family: "字魂71号-御守锦书", cursive;
+            }
+            p.main2:hover {
+                background-clip: border-box;
+                background: linear-gradient(to right, rgb(186, 255, 57), rgb(236, 79, 171));
+                -webkit-background-clip: text;
+                color: transparent;
+                text-align: center;
+                line-height: 580px;
+                letter-spacing:3px; 
+                font-size: 40px;
+                font-family: "字魂71号-御守锦书", cursive;
+                font-style:italic;
+                filter: drop-shadow(10px 10px 100px gray);
+            }
+            
+            p.bottomleft2 {
+                color:rgba(186,239,71,1.00);
+                text-align: center;
+                line-height: 580px;
+                letter-spacing:3px; 
+                font-size: 40px;
+                font-family: "字魂71号-御守锦书", cursive;
+            }
+            p.bottomleft2:hover {
+                background-clip: border-box;
+                background: linear-gradient(to right, rgb(57, 60, 255), rgb(255, 0, 0));
+                -webkit-background-clip: text;
+                color: transparent;
+                text-align: center;
+                line-height: 580px;
+                letter-spacing:3px; 
+                font-size: 40px;
+                font-family: "字魂71号-御守锦书", cursive;
+                font-style:italic;
+                filter: drop-shadow(10px 10px 100px gray);
+            }
+            
+            p.bottomright2 {
+                color:rgba(186,239,71,1.00);
+                text-align: center;
+                line-height: 580px;
+                letter-spacing:3px; 
+                font-size: 40px;
+                font-family: "字魂71号-御守锦书", cursive;
+            }
+            p.bottomright2:hover {
+                background-clip: border-box;
+                background: linear-gradient(to right, rgb(57, 60, 255), rgb(255, 0, 0));
+                -webkit-background-clip: text;
+                color: transparent;
+                text-align: center;
+                line-height: 580px;
+                letter-spacing:3px; 
+                font-size: 40px;
+                font-family: "字魂71号-御守锦书", cursive;
+                font-style:italic;
+                filter: drop-shadow(10px 10px 100px gray);
+            }
+        </style>
+        
+        <style type="text/css">
+            @keyframes br {
+                0% {
+                    background-image:url("../主页面/bottomright.jpg");
+                }
+                25% {
+                    background-image:url("../主页面/bottomright1.jpg");
+                }
+                50% {
+                    background-image:url("../主页面/bottomright2.jpg");
+                }
+                75% {
+                    background-image:url("../主页面/bottomright3.jpg");
+                }
+                100% {
+                    background-image:url("../主页面/bottomright4.jpg");
+                }
+            }
+            div.bottomright1 {
+                margin:10px;
+                width:98%;
+                height:580px;
+                margin-top: -30px;
+                background-image:url("../主页面/bottomright4.jpg");
+                animation-name:br;
+                animation-delay:0s;
+                animation-duration: 16s;
+                animation-iteration-count: infinite;
+            }
+         
+            @keyframes bl {
+                0% {
+                    background-image:url("../主页面/bottomleft.jpg");
+                }
+                50% {
+                    background-image:url("../主页面/bottomleft1.jpg");
+                }
+                100% {
+                    background-image:url("../主页面/bottomleft2.jpg");
+                }               
+            }
+            div.bottomleft1 {
+                margin:10px;
+                width:98%;
+                height:580px;
+                margin-top: -30px;
+                background-image:url("../主页面/bottomleft2.jpg");
+                animation-name:bl;
+                animation-delay:0s;
+                animation-duration: 8s;
+                animation-iteration-count: infinite;
+            }
+        </style>
+        
+        <style>
+            div.footer {
+                float:left;
+                width:100%;
+                height:100px;
+                background-color: cornsilk;
+            }
+            @font-face {
+                font-family: 方正粗黑宋简体, cursive;
+                src: url("C:/Program Files/WindowsApps/903DB504.56054E940A214_11.6.2035.0_x86__a99ra4d2cbcxa/方正粗黑宋简体.ttf");
+            }
+            p.footer {
+                font-family: 方正粗黑宋简体, cursive;
+                color:rgba(252,200,0,1.00);
+                text-align: center;
+                font-size: 30px;
+            }
+            p.footer:hover {
+                background-clip: border-box;
+                font-family: 方正粗黑宋简体, cursive;
+                background: linear-gradient(to right, rgb(57, 60, 255), rgb(255, 0, 0));
+                -webkit-background-clip: text;
+                color: transparent;
+                margin-bottom:0.001px;
+                text-align: center;
+                letter-spacing:2px;
+                font-size: 33px;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        
+        <div class="top"><p class="a">&nbsp&nbsp&nbsp<span class="one">建筑</span>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp<span class="two">景色</span>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp<span class="three">校园</span>&nbsp&nbsp&nbsp</p></div>
+        
+        <div class="all">
+            <div class="left">
+                <div class="left1"><a href="../网页/历史建筑.html" target="_blank" style="text-decoration:none;"><p class="left2">历史建筑</p></a></div>
+            </div>
+            
+            <div class="main">
+                <div class="main1"><a href="../网页/地标建筑.html" target="_blank" style="text-decoration:none;"><p class="main2">地标建筑</p></a></div>
+            </div>
+            
+            <div class="right">
+                <div class="right1"><a href="../网页/青岛景色.html" target="_blank" style="text-decoration:none;"><p class="right2">青岛景点</p></a></div>
+            </div>
+            
+            <div class="bottomleft">
+                <div class="bottomleft1"><a href="../网页/校园景色.html" target="_blank" style="text-decoration:none;"><p class="bottomleft2">校园景色</p></a></div>
+            </div>
+            
+            <div class="bottomright">
+                <div class="bottomright1"><a href="../网页/校园回忆录.html" target="_blank" style="text-decoration:none;"><p class="bottomright2">校园回忆录</p></a></div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <i><p class="footer">让&nbsp&nbsp一&nbsp&nbsp切&nbsp&nbsp都&nbsp&nbsp变&nbsp&nbsp得&nbsp&nbsp更&nbsp&nbsp美&nbsp&nbsp好</p></i>
+        </div>
+        
+        <audio src="../其他/私に闻いて风i - 治愈の景 (治愈之景).mp3" controls autoplay="autoplay" loop="loop">404！</audio>
+        
+    </body>
+    
+</html>
